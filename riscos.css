@@ -4,11 +4,6 @@
     margin: 0;
 }
 
-body {
-    font-family: "Poppins";
-    background-image: url(background.svg);
-}
-
 header {
     background-color: #053C11;
     box-shadow: 0 5px 12px 0px green;
@@ -63,32 +58,36 @@ header {
     width: 110px;
 }
 
-.quadrado {
-    width: 450px;
-    padding: 6px;
-    background-color: white;
-    border: 2px solid green;
-    border-radius: 10px;
+body {
+    font-family: "Poppins";
+    background-image: url(background.svg);
+}
+
+.content {
     margin-top: 20px;
-    margin-left: 30%;
-    text-align: center;
-    box-shadow: 3px 3px 8px 3px green;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.quadrado_resposta {
-    width: 500px;
-    padding: 8px;
-    background-color: white;
-    border: 2px solid green;
-    border-radius: 10px;
-    margin-left: 28.1%;
-    margin-top: 12px;
-    text-align: center;
-    box-shadow: 2px 2px 8px 2px green;
-    display: none;
+.tipoCafe {
+    width: 519px;
+    height: 450px;
+    border-radius: 14px;
+    background-color: rgba(234, 232, 219, 0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.botao {
+.tipoCafe h1 {
+    margin-top: 120px;
+    font-size: 27px;
+    color: #053C11;
+}
+
+.tipoCafe button {
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,45 +99,173 @@ header {
     background-color: #EAE8DB;
     letter-spacing: -1px;
     cursor: pointer;
-    margin-left: 34.5%;
+    width: 170px;
 }
 
-.btn-quadrado {
-    width: 140px;
+.tipoCafe button:hover {
+    background-color: #D9A30B;
+    border: none;
+    transition: 0.3s;
+}
+
+.englobaCafe {
+    display: flex;
+    margin-top: 0px;
+    gap: 50px;
+    text-align: center;
+}
+
+.englobaArabica {
+    display: flex;
+    gap: 60px;
+}
+
+.arabicaItens {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.arabicaItens h1 {
+    font-size: 27px;
+    color: #053C11;
+}
+
+.arabicaItens b {
+    color: #053C11;
+}
+
+.classArabica {
+    width: 519px;
+    height: 450px;
+    border-radius: 14px;
+    background-color: rgba(234, 232, 219, 0.30);
+    display: flex;
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+.arabicaResposta {
+    width: 300px;
+    padding: 16px;
+    height: 250px;
+    margin-top: 80px;
+    border-radius: 14px;
+    background-color: rgba(234, 232, 219, 0.30);
+    display: flex;
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+.arabicaResposta b {
+    color: #925035;
+}
+
+.arabicaResposta p {
+    color: #053C11;
+}
+
+.englobaRobusta {
+    display: flex;
+    gap: 60px;
+}
+
+.classRobusta {
+    width: 519px;
+    height: 450px;
+    border-radius: 14px;
+    background-color: rgba(234, 232, 219, 0.30);
+    display: flex;
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+.robustaItens {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.robustaItens h1 {
+    font-size: 27px;
+    color: #053C11;
+}
+
+.robustaItens b {
+    color: #053C11;
+}
+
+.respostaRobusta {
+    width: 300px;
+    padding: 16px;
+    height: 250px;
+    margin-top: 80px;
+    border-radius: 14px;
+    background-color: rgba(234, 232, 219, 0.30);
+    display: flex;
+    display: none;
+    align-items: center;
+    text-align: center;
+}
+
+.respostaRobusta b {
+    color: #925035;
+}
+
+.respostaRobusta p {
+    color: #053C11;
+}
+
+input {
+    width: 334px;
+    height: 35px;
+    font: 400 17px 'Poppins';
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    border-bottom: #053C11 solid 1px;
+    outline: none;
+    color: #925035;
+    transition: top 1s ease-in-out;
+    font-size: larger;
+}
+
+input::placeholder {
+    color: rgba(146, 80, 53, 1);
+}
+
+select {
+    width: 65px;
+    padding: 4px;
+    font: 400 17px 'Poppins';
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    border-bottom: #053C11 solid 1px;
+    outline: none;
+    color: #925035;
+    font-size: larger;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700 17px 'Poppins';
+    height: 38px;
+    padding: 5px 10px;
+    border: 3px solid #D9A30B;
+    border-radius: 20px;
+    background-color: #EAE8DB;
+    letter-spacing: -1px;
+    cursor: pointer;
+    width: 220px;
+    margin-left: 28%;
 }
 
 .botao:hover {
     background-color: #D9A30B;
     border: none;
     transition: 0.3s;
-}
-
-input {
-    display: flex;
-    text-align: center;
-    margin-left: 22%;
-    margin-top: 4px;
-    width: 245px;
-    padding: 6px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 3px 3px 3px green;
-    -moz-box-shadow: 3px 3px 3px green;
-    -webkit-box-shadow: 3px 3px 3px green;
-    border: 3px solid green;
-    font-size: medium;
-}
-
-select {
-    width: 65px;
-    padding: 4px;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    box-shadow: 3px 3px 3px green;
-    -moz-box-shadow: 3px 3px 3px green;
-    -webkit-box-shadow: 3px 3px 3px green;
-    border: 3px solid green;
-    font-size: medium;
 }
